@@ -114,7 +114,7 @@
    ```
 
 ## Result
-   <img src="![output](https://github.com/user-attachments/assets/4f8e8333-2cdd-43d8-81d7-07a739d2e090)" alt="Alt text" title="Optional title">
+   <img src="Result/output.png" alt="Alt text" title="Optional title">
 
 
 
