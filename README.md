@@ -1,5 +1,5 @@
-## Lyrics Generator (Thai Somg)<br>
-   # Requirement<br>
+# Lyrics Generator (Thai Somg)<br>
+   ## Requirement<br>
      matplotlib==3.9.2
      seaborn==0.13.2
      scikit-learn==1.6.0
@@ -16,5 +16,9 @@
       Or
        
     $ pip install -r requirements.txt
-              
+
+## Import package file
+   ```python 
+   your_code = do_some_stuff
+   ```
   
