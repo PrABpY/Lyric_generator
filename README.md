@@ -1,5 +1,5 @@
 # Lyrics Generator (Thai Somg)<br>
-   Programming Language :: Python :: 3.9
+   
    ## Requirement<br>
      matplotlib==3.9.2
      seaborn==0.13.2
