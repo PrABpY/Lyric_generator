@@ -15,5 +15,6 @@
 <br>
   Or
  <br>
-  ```$ pip install -r requirements.txt```
+  ```python:Gen_Lyrics.py
+  ```
 <br>
