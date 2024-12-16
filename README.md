@@ -1,5 +1,5 @@
 # Lyrics Generator (Thai Somg)<br>
-   
+   <img alt=”React” src="https://img.shields.io/badge/python-3.9-green"/>
    ## Requirement<br>
      matplotlib==3.9.2
      seaborn==0.13.2
