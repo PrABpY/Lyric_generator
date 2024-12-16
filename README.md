@@ -1,6 +1,5 @@
 # Lyrics Generator (Thai Somg)<br>
-   <img alt=”React” src="https://img.shields.io/badge/python-3.9-green"/>
-   <img alt=”React” src="https://img.shields.io/badge/TensorFlow"/>
+   <img alt=”React” src="https://img.shields.io/badge/python-3.9-green"/> <img alt=”React” src="https://img.shields.io/badge/TensorFlow-red"/>
    
    ## Requirement<br>
      matplotlib==3.9.2
