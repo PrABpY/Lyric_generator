@@ -12,7 +12,6 @@ from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Embedding, Dense, Dropout
-from tensorflow.keras.callbacks import ModelCheckpoint
 # from tensorflow.keras.saving import load_model
 from livelossplot import PlotLossesKeras
 
@@ -20,7 +19,7 @@ from livelossplot import PlotLossesKeras
 pd.set_option('max_colwidth', 999)
 print("pass")
 tf.config.list_physical_devices('GPU')
-df = pd.read_csv('data_lyrics.csv')
+df = pd.read_csv('Dataset/data_lyrics.csv')
 
 df['textToken'] = df['Lyrics'].apply(lambda text: word_tokenize(text,engine = 'newmm',keep_whitespace = False))
 df['textToken'] = df['textToken'].apply(lambda text: ' '.join(text))
@@ -58,7 +57,7 @@ model.add(Dropout(0.2))
 model.add(Dense(totalWords, activation = 'softmax'))
 model.summary()
 
-EPOCHS = 1000
+EPOCHS = 1
 RATE = 0.0001
 opt = Adam(learning_rate = RATE)
 model.compile(optimizer = opt,loss = 'categorical_crossentropy',metrics = ['accuracy'])
@@ -68,9 +67,9 @@ scores = model.evaluate(features,labels,verbose=0)
 print("Accuracy: %.2f%%" % (scores[1]*100))
 
 
-model.save('Textgen_model_LSTM.keras')
-file_path = "model/Textgen_"+"gen_LSTM"+"_.h5"
-model.save(file_path)
+# model.save('Textgen_model_LSTM.keras')
+# file_path = "model/Textgen_"+"gen_LSTM"+"_.h5"
+# model.save(file_path)
 plt.figure(figsize = (10, 6))
 plt.plot(history.history['accuracy'],c = 'blue',label = 'Accuracy')
 plt.plot(history.history['loss'],c = 'red',label = 'Loss')
