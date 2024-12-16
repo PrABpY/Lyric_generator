@@ -13,7 +13,9 @@
   * keras==2.10.0
   * Keras-Preprocessing==1.1.2
 <br>
-  Or<br>
+  Or
+ <br>
   ```
   $ pip install -r requirements.txt
   ```
+<br>
