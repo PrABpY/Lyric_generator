@@ -1,4 +1,6 @@
-# Lyrics Generator (Thai Somg)<br>
+# Lyrics Generator (Thai Song)<br>
+   <img alt=”React” src="https://img.shields.io/badge/python-3.9-green"/> <img alt=”React” src="https://img.shields.io/badge/TensorFlow-red"/>
+   
    ## Requirement<br>
      matplotlib==3.9.2
      seaborn==0.13.2
@@ -42,20 +44,20 @@
    df = pd.read_csv('Dataset/data_lyrics_for_train.csv')
    ```
 ## Data Preprocessing
-   create column Lyrics_token
+   * create column Lyrics_token
    ```python 
    df['Lyrics_token'] = df['Lyrics'].apply(lambda text: word_tokenize(text,engine = 'newmm',keep_whitespace = False))
    df['Lyrics_token'] = df['Lyrics_token'].apply(lambda text: ' '.join(text))
    df['Lyrics_token'] = df['Lyrics_token'].replace("\n","")
    ```
-  word Tokenize
+  * word Tokenize
    ```python 
    tokenizer = Tokenizer() 
    tokenizer.fit_on_texts(df['Lyrics_token'])
    totalWords = len(tokenizer.word_index) + 1 
    print(f'Total unique word: {totalWords}')
    ```
-   sequences Tokens
+   * sequences Tokens
    ```python 
    sequencesTokens = []
    
